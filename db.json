@@ -45,5 +45,58 @@
       "rating": 4.7,
       "stock": 50
     }
+  ],
+
+  "plants": [
+    {
+      "id": 1,
+      "name": "Snake Plant",
+      "category": "Indoor",
+      "price": 15.99,
+      "image": "https://images.unsplash.com/photo-1587502537745-84b86da1204f?auto=format&fit=crop&w=800&q=80",
+      "water": "Low",
+      "light": "Indirect sunlight",
+      "rating": 4.6
+    },
+    {
+      "id": 2,
+      "name": "Aloe Vera",
+      "category": "Succulent",
+      "price": 12.5,
+      "image": "https://images.unsplash.com/photo-1593482892290-f54927ae1f1b?auto=format&fit=crop&w=800&q=80",
+      "water": "Low",
+      "light": "Bright sunlight",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Peace Lily",
+      "category": "Indoor",
+      "price": 18.0,
+      "image": "https://images.unsplash.com/photo-1598899134739-24c46f58c3b3?auto=format&fit=crop&w=800&q=80",
+      "water": "Medium",
+      "light": "Low to medium light",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "name": "Monstera Deliciosa",
+      "category": "Indoor",
+      "price": 25.99,
+      "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80",
+      "water": "Medium",
+      "light": "Indirect sunlight",
+      "rating": 4.8
+    },
+    {
+      "id": 5,
+      "name": "Cactus",
+      "category": "Succulent",
+      "price": 9.99,
+      "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+      "water": "Very Low",
+      "light": "Direct sunlight",
+      "rating": 4.4
+    }
   ]
 }

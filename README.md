@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📘 Rendering Methods (Short Notes)
 
-## Getting Started
+🟢 CSR (Client-Side Rendering)
+ Browser (client) এ data fetch হয়, তারপর UI render হয়
+প্রথমে empty HTML আসে
+পরে JS load → data fetch → UI show
 
-First, run the development server:
+✅ Pros:
+interactive apps এর জন্য ভালো
+fast navigation
+❌ Cons:
+SEO খারাপ
+initial load slow
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔵 SSR (Server-Side Rendering)
+👉 প্রতি request এ server HTML generate করে
+user request → server data fetch → HTML send
+✅ Pros:
+SEO friendly
+always fresh data
+❌ Cons:
+slow response (server কাজ করে প্রতি request এ)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+🟡 SSG (Static Site Generation)
+build time এ HTML generate হয়
+একবার build → সব user same static page পায়
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Pros:
+খুব fast 
+best for SEO
+❌ Cons:
+data update করতে rebuild লাগে
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+🟣 ISR (Incremental Static Regeneration)
+ static + dynamic mix
+page static থাকে
+নির্দিষ্ট সময় পর auto update হয়
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ Pros:
+fast + fresh data 🔥
+rebuild ছাড়া update
+❌ Cons:
+slight delay in update
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Summery: 
+CSR = browser data আনে, SSR = server প্রতি request এ page বানায়, SSG = আগে থেকে build করে static page দেয়, আর ISR = static page রেখে মাঝে মাঝে update করে।
