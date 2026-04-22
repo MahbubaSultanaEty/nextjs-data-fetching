@@ -49,4 +49,4 @@ slight delay in update
 
 
 ## Summery: 
-CSR = browser data আনে, SSR = server প্রতি request এ page বানায়, SSG = আগে থেকে build করে static page দেয়, আর ISR = static page রেখে মাঝে মাঝে update করে।
+CSR = browser data আনে, SSR = server প্রতি request এ page বানায়, SSG = আগে থেকে build করে static page দেয়, আর ISR = static page রেখে মাঝে মাঝে update করে | [next object  a retvalidate use kore]
