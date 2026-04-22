@@ -1,4 +1,9 @@
+export const generateStaticParams = async () => {
+    const res = await fetch("http://localhost:6004/plants");
+    const plants = await res.json();
+    return plants.slice(0,4).map(plant => ({plantId: plant.id}))
 
+}
 
 const PlantDetailsPage = async ({params}) => {
     const { plantId } = await params;
